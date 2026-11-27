@@ -8,15 +8,6 @@
 An autonomous agent that monitors GitHub, Twitter/X, and LinkedIn for mentions of your name or brand, analyzes sentiment, scores priority, drafts personalized responses, and routes them through a human-in-the-loop approval queue before anything is posted.
 
 ---
-
-## 🎬 Demo
-
-Watch the agent detect a brand mention and draft a personalized response:
-
-[![Personal Brand Monitor Demo Reel](https://img.youtube.com/vi/demo/0.jpg)](https://www.instagram.com/p/demo-reel)
-
-*Click above to watch the 30-second demo reel on Instagram.*
-
 ## ✨ Features
 
 | Feature | Description |

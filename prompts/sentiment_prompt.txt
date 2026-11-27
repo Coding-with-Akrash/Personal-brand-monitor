@@ -1,0 +1,7 @@
+Classify the sentiment of this text as exactly one of: positive, neutral, or negative.
+
+- Positive: praise, appreciation, excitement, recommendations
+- Neutral: questions, general mentions, news sharing
+- Negative: criticism, complaints, bugs, warnings
+
+Return only the single word: positive, neutral, or negative

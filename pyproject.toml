@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-brand-monitor"
+version = "1.0.0"
+description = "Autonomous agent that monitors GitHub, Twitter/X, and LinkedIn for brand mentions, analyzes sentiment, and drafts personalized responses with human-in-the-loop approval."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{name = "Personal Brand Monitor", email = "hello@example.com"}]
+keywords = ["ai-agent", "brand-monitoring", "langgraph", "social-media", "sentiment-analysis", "automation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+
+dependencies = [
+    "langchain>=0.1.0",
+    "langchain-openai>=0.1.0",
+    "langgraph>=0.0.40",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+personal-brand-monitor = "src.agent:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "B", "I", "N"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

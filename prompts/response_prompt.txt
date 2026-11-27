@@ -1,0 +1,7 @@
+Draft a personalized response to this brand mention.
+
+Requirements:
+- Match the sentiment tone
+- Keep it under 200 characters for Twitter/X, under 500 for LinkedIn/GitHub
+- Sound human, not robotic
+- Sign off with the brand team name

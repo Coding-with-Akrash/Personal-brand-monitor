@@ -1,0 +1,27 @@
+agent:
+  model: gpt-4o-mini
+  temperature: 0.5
+  max_iterations: 10
+
+tools:
+  mention_aggregator:
+    enabled: true
+    sources: [github, twitter, linkedin]
+    max_mentions_per_source: 10
+  sentiment_analyzer:
+    enabled: true
+  priority_scorer:
+    enabled: true
+    max_priority_mentions: 5
+  response_drafter:
+    enabled: true
+    brand_voice: professional_and_friendly
+  approval_queue:
+    enabled: true
+    auto_post: false
+  poster:
+    enabled: false
+
+monitor:
+  check_interval_minutes: 60
+  brand_name: YourNameOrBrand

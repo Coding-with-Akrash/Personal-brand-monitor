@@ -1,0 +1,48 @@
+{
+  "brand_name": "Codeharbor",
+  "generated_at": "2024-01-15T09:00:00Z",
+  "mentions": [
+    {
+      "source": "github",
+      "title": "Timeout error on large files",
+      "text": "I've been using your library and keep getting timeout errors on large files. Any ETA on a fix?",
+      "url": "https://github.com/coding-with-akrash/Personal-brand-monitor/issues/123",
+      "author": "coding-with-akrash",
+      "sentiment": "negative",
+      "priority_rank": 1,
+      "priority_score": 0.85
+    },
+    {
+      "source": "twitter",
+      "title": "Tweet",
+      "text": "Just launched my project using MyBrand! Love the developer experience. 🚀",
+      "url": "https://twitter.com/i/web/status/1234567890",
+      "author": "tech_guru",
+      "sentiment": "positive",
+      "priority_rank": 2,
+      "priority_score": 0.70
+    }
+  ],
+  "drafted_responses": [
+    {
+      "mention": {
+        "source": "github",
+        "text": "I've been using your library and keep getting timeout errors on large files. Any ETA on a fix?",
+        "sentiment": "negative",
+        "author": "coding-with-akrash"
+      },
+      "drafted_response": "Hi @coding-with-akrash! Thanks for flagging this. We're aware of the timeout issue on large files and working on a fix in v2.1. Can you share your file size so we can prioritize? — The MyBrand Team",
+      "status": "pending_approval"
+    },
+    {
+      "mention": {
+        "source": "twitter",
+        "text": "Just launched my project using Codeharbor! Love the developer experience. 🚀",
+        "sentiment": "positive",
+        "author": "tech_guru"
+      },
+      "drafted_response": "Awesome! 🎉 Congrats on the launch. Would love to feature your project — DM us a link! — The Codeharbor Team",
+      "status": "pending_approval"
+    }
+  ]
+}
